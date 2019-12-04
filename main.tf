@@ -20,3 +20,12 @@ module "vpc" {
     Name = "go"
   }
 }
+
+resource "aws_s3_bucket" "tfe" {
+  bucket = "tfe-bucket"
+  acl    = "private"
+
+  tags = {
+    Name        = "go-tfe"
+  }
+}
