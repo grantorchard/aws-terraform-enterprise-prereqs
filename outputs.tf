@@ -6,6 +6,6 @@ output "s3_id" {
     value = "${aws_s3_bucket.tfe.id}"
 }
 
-output "subnet_ids" {
-    value = "${module.vpc.subnet_ids}"
+output "public_subnets" {
+    value = "${module.vpc.public_subnets}"
 }
